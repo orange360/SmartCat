@@ -16,7 +16,9 @@ def execute_transaction(w3, config, private_key, id, method_hex, num_executions)
         account = w3.eth.account.from_key(private_key)
         nonce = w3.eth.get_transaction_count(account.address, 'latest')
 
-        gas_price = w3.eth.gas_price
+        gas_price_base = w3.eth.gas_price
+        gas_price = int(gas_price_base * 1.5)
+
         transaction = {
             'to': config["contract_address"],
             'value': 0,
