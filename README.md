@@ -1,3 +1,9 @@
+# 更新了V2版本
+
+见
+https://github.com/orange360/SmartCatV2
+
+
 # 用户参数
 
 要配置您的 `user_parameters.csv`，请按照以下说明操作：
